@@ -1,0 +1,468 @@
+/*=========================================================================================*/
+/*
+Nombre archivo: estilos.css
+Autor: Juan Ferrera Sala
+Fecha: 14/11/2021
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    box-sizing:border-box;
+    font-family: 'Overpass', sans-serif;
+}
+/*=========================================================================================*/
+/*Body*/
+/*=========================================================================================*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: white; 
+	line-height: 1.5em;
+}
+.header{
+    background:rgb(50, 50, 50);
+    display: flex;
+    height: 12.5vh;
+    align-items: center;
+}
+.contenedorEnlaces{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 95%;
+}
+p{
+  line-height:2.5rem;
+}
+h1{
+  line-height:5rem;
+}
+/*=========================================================================================*/
+/*Logo header*/
+/*=========================================================================================*/
+header .linkLogo{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo-header{
+	text-decoration: none;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.logo-header:hover {
+	color: #0277bd;
+}
+/*=========================================================================================*/
+/*Nav*/
+/*=========================================================================================*/
+.nav{
+    margin-left: 3rem;
+    border-left: 3px white solid;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+    margin-left: 2rem;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+	padding: 0 10px;
+	text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    align-items: center;
+}
+nav ul li a:hover {
+    color: #0277bd;
+    font-weight: bold;
+}
+/*=========================================================================================*/
+/*Main*/
+/*=========================================================================================*/
+.contenedorImagen{
+    background-image: url("../img/Wallpaper\ Reef.png");
+    background-size:cover;
+    height: 80.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenidoMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-grande{
+    width: 20rem;
+    height: 20rem;
+}
+.textoDeReclamo{
+    color: white;
+}
+
+/*=========================================================================================*/
+/*Flecha Hacia Abajo */
+/*=========================================================================================*/
+.flechaHaciaAbajo{
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;
+    height: 3.5rem;
+}
+/*=========================================================================================*/
+/*Texto de explicacion*/
+/*=========================================================================================*/
+.contenedorDeNovedades{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 22px;
+}
+a {
+  text-decoration:none;
+}
+.titulos{
+    font-size: 5rem;
+    color: #172d45;
+}
+.textoPrincipal{
+    text-align: justify;
+}
+
+/*=========================================================================================*/
+/*contenedorInicioDeSesion*/
+/*=========================================================================================*/
+.contenedorAcademia{
+    margin-top: 5rem;
+    background-image: url("../img/Agentes/fade.jpg");
+    background-size: cover;
+    display: flex;
+    height: 30rem;
+}
+.contenidoDeAcademia{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.tituloAcademia{
+    font-size: 50px;
+    color: white;
+}
+.subTituloAcademia{
+    font-size: 22px;
+    color: white;
+}
+.botonAcademia{
+	text-decoration: none;
+    color: white;
+}
+
+/*=========================================================================================*/
+/*Botones */
+/*=========================================================================================*/
+
+.btn {
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--button-text-color);
+    cursor: pointer;
+    /* Clean style */
+    color: #fff;
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: #fff;
+    --button-background-color: #0277bd;
+    --highlight-color: #fff;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+    
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .btn::before,
+  .btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+  }
+  
+  .btn::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .btn::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .btn:active,
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active::before,
+  .btn:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .btn:active::before {
+    top: 3px;
+  }
+  
+  .btn:active::after {
+    bottom: 3px;
+  }
+  
+  .btn__inner {
+    position: relative;
+    display: block;
+    padding: 20px 30px;
+    background-color: var(--button-background-color);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+  }
+  
+  .btn__inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--button-bits-color);
+  }
+  
+  .btn__inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--button-bits-color);
+    transition: all .2s ease;
+  }
+  
+  .btn__slide {
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .btn__content {
+    position: relative;
+  }
+  
+  .btn:hover {
+    color: var(--button-text-color-hover);
+  }
+  
+  .btn:hover .btn__slide {
+    width: calc(100% + 15px);
+  }
+  
+  .btn:hover .btn__inner::after {
+    background-color: var(--button-bits-color-hover);
+  }
+  
+  .btn--light {
+    --button-background-color: var(--background-color);
+    --button-text-color: var(--highlight-color);
+    --button-inner-border-color: var(--highlight-color);
+    --button-text-color-hover: #ece8e1;
+    --button-bits-color-hover: #ece8e1;
+  }
+
+/*=========================================================================================*/
+/*Carrusel */
+/*=========================================================================================*/
+
+  .container {
+    width: 100%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+    justify-content: center;
+  }
+  .caratulas{
+    height: 23rem;
+    width: 40rem;
+  }
+  .card {
+    display: flex;
+    height: 23rem;
+    width: 40rem;
+    background-color: #172d45;
+    border-radius: 1px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
+/*=========================================================================================*/
+/*quienesSomos*/
+/*=========================================================================================*/
+.quienesSomos{
+  padding: 2.5rem;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorMiembros{
+  display: flex;
+  flex-direction: row;
+}
+.jugador{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iconosAgentes{
+  height: 10rem;
+  width: 10rem;
+}
+/*=========================================================================================*/
+/*footer*/
+/*=========================================================================================*/
+footer{
+  background:rgb(242, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+  justify-content: start;
+  flex-basis: 80%;
+  color: black;
+}
+
+footer .linkLogo{
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.contenedorFooter{
+  margin-left: 3rem;
+  border-left: 3px black solid;
+}
+.nombreEmpresa{
+  margin-left: 2rem;
+}
+
+#userIcon {
+  width: 2rem;
+  margin-right: 2rem;
+}
