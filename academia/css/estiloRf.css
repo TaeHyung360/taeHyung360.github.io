@@ -129,8 +129,7 @@ nav ul li a:hover {
 /*Section */
 /*=========================================================================================*/
 .contenedorNoticia{
-    background-image: url("../../img/Agentes/fade.jpg");
-    background-size: cover;
+    background-color: #ece8e1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +279,7 @@ nav ul li a:hover {
 /*seccionClases*/
 /*=========================================================================================*/
 .seccionClases{
-    padding: 2rem;
+
     display: flex;
     flex-direction: column;
 }
@@ -293,8 +292,11 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
 }
+.fondo{
+    width: 100%;
+}
 .caratulas{
-height: 23rem;
+    height: 23rem;
   width: 40rem;
   padding: 1rem;
 }
