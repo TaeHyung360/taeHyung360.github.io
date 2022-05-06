@@ -115,7 +115,7 @@ nav ul li a:hover {
 /*Main*/
 /*=========================================================================================*/
 .menu {
-    background-image: url("../img/fondoMenu.jpg");
+    background-image: url("../../img/fondoMenu.jpg");
     height: 7rem;
     background-size: cover;
     display: flex;
