@@ -39,6 +39,7 @@ body {
 
 p {
     line-height: 2.5rem;
+    
 }
 
 h1 {
@@ -134,7 +135,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding: 2rem;
 }
 /*=========================================================================================*/
 /*Botones */
